@@ -100,6 +100,7 @@ body {
 .section {
   margin-bottom: 30px;
   line-height: 1.6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: rgba(255, 255, 255, 0.1);
   padding: 25px;
   border-radius: 10px;
@@ -235,4 +236,14 @@ footer p {
   footer {
     position: relative;
   }
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
